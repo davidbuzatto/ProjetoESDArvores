@@ -22,7 +22,7 @@ public class ArvoreVermelhoPreto<Key extends Comparable<Key>, Value> implements 
     /*
      * Classe interna estática que define os nós da árvore vermelho-preto.
      */
-    private static class Node<Key extends Comparable<Key>, Value> {
+    public static class Node<Key extends Comparable<Key>, Value> {
         
         Key key;
         Value value;

@@ -4,6 +4,8 @@ import aesd.ds.implementations.linear.LinkedQueue;
 import aesd.ds.implementations.linear.ResizingArrayList;
 import aesd.ds.interfaces.List;
 import aesd.ds.interfaces.Queue;
+import br.com.davidbuzatto.jsge.core.engine.EngineFrame;
+import java.awt.Color;
 import java.util.Iterator;
 
 /**
@@ -27,16 +29,19 @@ public class ArvoreBinariaBusca<Key extends Comparable<Key>, Value> implements I
     /*
      * Classe interna estática que define os nós da árvore binária de busca.
      */
-    private static class Node<Key extends Comparable<Key>, Value>{
+    public static class Node<Key extends Comparable<Key>, Value>{
         
-        Key key;
-        Value value;
-        Node<Key, Value> left;
-        Node<Key, Value> right;
+        public Key key;
+        public Value value;
+        public Node<Key, Value> left;
+        public Node<Key, Value> right;
+        public int nivel;
+        public int ranque;
+        public Color cor;
         
         @Override
         public String toString() {
-            return key + " -> " + value;
+            return key + " -> " + value + " nivel: " + nivel + " ranque: " + ranque;
         }
         
     }
@@ -266,6 +271,23 @@ public class ArvoreBinariaBusca<Key extends Comparable<Key>, Value> implements I
             inOrder( node.left, keys );
             keys.add( node.key );
             inOrder( node.right, keys );
+        }
+    }
+    
+    public List<Node<Key, Value>> coletarParaDesenho() {
+        List<Node<Key, Value>> nos = new ResizingArrayList<>();
+        emOrdemColeta( root, nos, 0 );
+        return nos;
+    }
+    
+    private void emOrdemColeta( Node<Key, Value> node, List<Node<Key, Value>> nos, int nivel ) {
+        if ( node != null ) {
+            emOrdemColeta( node.left, nos, nivel + 1 );
+            node.nivel = nivel;
+            node.ranque = nos.getSize();
+            node.cor = EngineFrame.GREEN;
+            nos.add( node );
+            emOrdemColeta( node.right, nos, nivel + 1 );
         }
     }
     

@@ -22,7 +22,7 @@ public class ArvoreAVL<Key extends Comparable<Key>, Value> implements Iterable<K
     /*
      * Classe interna estática que define os nós da árvore AVL.
      */
-    private static class Node<Key extends Comparable<Key>, Value>{
+    public static class Node<Key extends Comparable<Key>, Value>{
         
         Key key;
         Value value;
