@@ -3,16 +3,16 @@ package projetoesdarvores;
 import br.com.davidbuzatto.jsge.core.engine.EngineFrame;
 
 /**
- * Simulador de árvores binárias de busca:
+ * Simulador de árvores AVL:
  *     Simula as operações de inserir e remover chaves;
  *     Simula os percursos (pré-ordem, em ordem, pós-ordem e em nível).
  * 
  * @author Prof. Dr. David Buzatto
  */
-public class SimuladorABB extends EngineFrame {
+public class SimuladorAVL extends EngineFrame {
 
-    public SimuladorABB() {
-        super( 800, 600, "Simulador de Árvores Binárias de Busca", 60, true );
+    public SimuladorAVL() {
+        super( 800, 600, "Simulador de Árvores AVL", 60, true );
     }
 
     @Override
@@ -31,7 +31,7 @@ public class SimuladorABB extends EngineFrame {
     }
     
     public static void main( String[] args ) {
-        new SimuladorABB();
+        new SimuladorAVL();
     }
     
 }

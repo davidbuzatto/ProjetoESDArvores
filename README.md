@@ -1,4 +1,4 @@
-Esqueleto para desenvolvimento de simuladores simples para as estruturas de dados Árvore Binária de Busca, Árvore AVL e Árvore Vermelho-preto.
+Esqueleto para desenvolvimento de simuladores simples para as estruturas de dados Árvore Binária de Busca, Árvore AVL e Árvore Vermelho e Preto.
 
 O simulador de árvore binária de busca contém uma implementação básica de exemplo que pode ser utilizada para iniciar o desenvolvimento.
 

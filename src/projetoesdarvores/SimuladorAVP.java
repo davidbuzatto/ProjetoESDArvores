@@ -3,16 +3,16 @@ package projetoesdarvores;
 import br.com.davidbuzatto.jsge.core.engine.EngineFrame;
 
 /**
- * Simulador de árvores binárias de busca:
+ * Simulador de árvores vermelho e preto:
  *     Simula as operações de inserir e remover chaves;
  *     Simula os percursos (pré-ordem, em ordem, pós-ordem e em nível).
  * 
  * @author Prof. Dr. David Buzatto
  */
-public class SimuladorABB extends EngineFrame {
+public class SimuladorAVP extends EngineFrame {
 
-    public SimuladorABB() {
-        super( 800, 600, "Simulador de Árvores Binárias de Busca", 60, true );
+    public SimuladorAVP() {
+        super( 800, 600, "Simulador de Árvores Vermelho e Preto", 60, true );
     }
 
     @Override
@@ -31,7 +31,7 @@ public class SimuladorABB extends EngineFrame {
     }
     
     public static void main( String[] args ) {
-        new SimuladorABB();
+        new SimuladorAVP();
     }
     
 }
