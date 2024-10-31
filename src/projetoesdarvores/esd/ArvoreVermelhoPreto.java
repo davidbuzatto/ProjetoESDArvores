@@ -24,10 +24,10 @@ public class ArvoreVermelhoPreto<Key extends Comparable<Key>, Value> implements 
      */
     public static class Node<Key extends Comparable<Key>, Value> {
         
-        Key key;
-        Value value;
-        Node<Key, Value> left;
-        Node<Key, Value> right;
+        public Key key;
+        public Value value;
+        public Node<Key, Value> left;
+        public Node<Key, Value> right;
 
         NodeColor color;
         int size;

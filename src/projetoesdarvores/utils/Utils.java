@@ -10,7 +10,7 @@ import java.awt.Color;
  */
 public class Utils {
     
-    private static void desenharSeta( EngineFrame engine, double x, double y, int tamanho, double graus, Color cor ) {
+    public static void desenharSeta( EngineFrame engine, double x, double y, int tamanho, double graus, Color cor ) {
         
         engine.drawLine( 
                 x, y, 
