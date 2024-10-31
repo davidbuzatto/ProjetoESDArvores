@@ -29,8 +29,8 @@ public class ArvoreVermelhoPreto<Key extends Comparable<Key>, Value> implements 
         public Node<Key, Value> left;
         public Node<Key, Value> right;
 
-        NodeColor color;
-        int size;
+        public NodeColor color;
+        public int size;
         
         @Override
         public String toString() {
@@ -42,7 +42,7 @@ public class ArvoreVermelhoPreto<Key extends Comparable<Key>, Value> implements 
     /*
      * Enumeração para especificação da cor do nó.
      */
-    private enum NodeColor {
+    public static enum NodeColor {
         RED,
         BLACK
     }

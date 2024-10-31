@@ -29,7 +29,7 @@ public class ArvoreAVL<Key extends Comparable<Key>, Value> implements Iterable<K
         public Node<Key, Value> left;
         public Node<Key, Value> right;
         
-        int height;
+        public int height;
         
         @Override
         public String toString() {
