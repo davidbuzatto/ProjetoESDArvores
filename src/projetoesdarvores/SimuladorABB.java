@@ -1,8 +1,8 @@
 package projetoesdarvores;
 
 import aesd.ds.interfaces.List;
+import br.com.davidbuzatto.jsge.collision.CollisionUtils;
 import br.com.davidbuzatto.jsge.core.engine.EngineFrame;
-import br.com.davidbuzatto.jsge.math.CollisionUtils;
 import br.com.davidbuzatto.jsge.math.Vector2;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
